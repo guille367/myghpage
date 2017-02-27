@@ -1,0 +1,63 @@
+section{
+    height: 105%; 
+}
+
+#top{
+    font-family: 'Arvo', serif;
+    text-align: center;
+    align-items: center;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadein{
+    animation-name: fade-in;
+    animation-duration: 3s;
+}
+
+#top h1{
+    display: inline;
+}
+
+.firstname{
+    transition: color 0.5s;
+}
+
+.firstname:hover{
+    color: red;
+}
+
+@media (min-width: 300px) and (max-width:699px){
+    #top{
+        color: red;
+        font-size: 3em;
+    }
+    #top img{
+        margin-top: 70px;
+        margin-bottom: 50px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50px 50px 50px 50px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width:2000px){
+    #top{
+        color: green;
+        font-size: 2em;
+    }
+    #top img{
+        margin-top: 70px;
+        margin-bottom: 50px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50px 50px 50px 50px;
+    }
+}
